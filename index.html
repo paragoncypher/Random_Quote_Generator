@@ -1,0 +1,66 @@
+<!-- Required User Stories 
+
+User Story #1: I can see a wrapper element with a corresponding id="quote-box".
+
+User Story #2: Within #quote-box, I can see an element with a corresponding id="text".
+
+User Story #3: Within #quote-box, I can see an element with a corresponding id="author".
+
+User Story #4: Within #quote-box, I can see a clickable element with a corresponding id="new-quote".
+
+User Story #5: Within #quote-box, I can see a clickable a element with a corresponding id="tweet-quote".
+
+User Story #6: On first load, my quote machine displays a random quote in the element with id="text".
+
+User Story #7: On first load, my quote machine displays the random quote's author in the element with id="author".
+
+User Story #8: When the #new-quote button is clicked, my quote machine should fetch a new quote and display it in the #text element.
+
+User Story #9: My quote machine should fetch the new quote's author when the #new-quote button is clicked and display it in the #author element.
+
+User Story #10: I can tweet the current quote by clicking on the #tweet-quote a element. This a element should include the "twitter.com/intent/tweet" path in its href attribute to tweet the current quote.
+
+User Story #11: The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized.
+
+-->
+
+<!DOCTYPE html>
+<head>
+    <title>Random Quote Generator for FCC Front End Development Certification</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css" charset="utf-8" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+    <!-- Font Awesome Twitter Icon: <i class="fa-brands fa-twitter"></i> Font Awesome Tumblr Icon: <i class="fa-brands fa-tumblr"></i> -->
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h2>Random Quote Generator</h2>
+        </div>
+        <div id="quote-box">
+            <div class="quote-text">
+                <i class="fa fa-quote-left"></i><span id="text"></span>
+            </div>
+            <div class="quote-author">- <span id="author"></span></div>
+            <div class="buttons">
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="button" id="tweet-quote" title="Tweet this quote!" target="_top" data-size="large" data-hashtags="quotes" data-show-count="false">Tweet
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="button" id="tumblr-quote" title="Post this quote on tumblr!" target="_blank">Tumblr
+                    <i class="fa-brands fa-tumblr"></i>
+                </a>
+                <button class="button" id="new-quote">New Quote</button>
+                </div>
+            </div>
+        </div>
+        </div>
+            <footer>Random Quote Generator for <a href="https://freecodecamp.org/">FCC</a> Front End Development Certification Project by <a href="https://github.com/paragoncypher">paragoncypher</a></footer>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script id="tumblr-js" async src="https://assets.tumblr.com/share-button.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
