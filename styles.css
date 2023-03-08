@@ -1,0 +1,160 @@
+/* Fonts */
+/*  - Display Font - 
+   Atomic Age Regular
+   font-family: 'atomic_ageregular', Arial, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+*/
+@font-face {
+    font-family: 'atomic_ageregular';
+    src: url('atomicage-regular-webfont.eot');
+    src: url('atomicage-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('atomicage-regular-webfont.woff2') format('woff2'),
+         url('atomicage-regular-webfont.woff') format('woff'),
+         url('atomicage-regular-webfont.ttf') format('truetype'),
+         url('atomicage-regular-webfont.svg#atomic_ageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* - Text Font -
+   Genos
+   font-family: 'Genos', sans-serif;
+   font-weight: normal (400), bold (700);
+   font-style: normal, italic */
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+div {
+    position: relative;
+    z-index: 2;
+}
+
+body {
+    background-color: #0F1212;
+    color: #0F1212;
+    font-family: 'Genos', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2 {
+    font-family: 'atomic_ageregular', Arial, sans-serif;
+    font-size: 2.5em;
+    color: rgba(202, 155, 2, 0.664);
+}
+
+a {
+    color: rgba(202, 2, 45, 0.664);
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgba(202, 155, 2, 0.664);
+    text-decoration: none;
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin: 15px auto 30px auto;
+    font-size: 0.8rem;
+    color: #9EA5A5;
+}
+
+/* Specific Styling */
+/* Header */
+#header {
+    width: 100vw;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: 15px auto 30px auto;
+    padding-top: 100px;
+}
+/* Quote-Box */
+#quote-box {
+    border-radius: 3px;
+    position: relative;
+    width: 450px;
+    margin: 0 auto 10px auto;
+    padding: 40px 50px;
+    display: block;
+    overflow: hidden;
+    background-color: #9EA5A5;
+}
+
+#quote-box .quote-text {
+    text-align: center;
+    width: 450px;
+    height: auto;
+    clear: both;
+    font-weight: 500;
+    font-size: 1.75em;
+}
+
+#quote-box .quote-author {
+    width: 450px;
+    height: auto;
+    clear: both;
+    padding-top: 20px;
+    font-size: 1em;
+    text-align: right;
+}
+
+#quote-box .buttons {
+    width: 450px;
+    margin: auto;
+    display: block;
+}
+
+#quote-box .buttons .button {
+    height: 38px;
+    border: none;
+    border-radius: 3px;
+    color: #9EA5A5;
+    background-color: #0F1212;
+    outline: none;
+    font-size: 0.85em;
+    padding: 8px 18px 6px 18px;
+    margin-top: 30px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#quote-box .buttons .button:hover {
+    opacity: 0.9;
+}
+
+#quote-box .buttons .button#tweet-quote,
+#quote-box .buttons .button#tumblr-quote {
+    width: 100px;
+    float: left;
+    padding: 0px;
+    padding-top: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+#quote-box .buttons .button#new-quote {
+    width: 100px;
+    height: 50px;
+    float: right;
+    padding: 0 20px;
+    margin-right: 40px;
+}
